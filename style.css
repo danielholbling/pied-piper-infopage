@@ -31,3 +31,19 @@ header .logo img {
 .personal-wrapper article {
     padding: 1rem;
 }
+
+
+.moa {
+    background-image: url(moa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.moa h1 {
+    margin: 0;
+}
