@@ -31,3 +31,7 @@ header .logo img {
 .personal-wrapper article {
     padding: 1rem;
 }
+
+#daniel-img {
+    height: 100%;
+}
