@@ -32,6 +32,14 @@ header .logo img {
     padding: 1rem;
 }
 
+.daniel {
+    display: grid;
+    grid: auto 1fr / 1fr 1fr;
+    grid-template-areas:    "daniel-img daniel-heading"
+                            "daniel-img daniel-text"
+}
+
 #daniel-img {
+    grid-area: daniel-img;
     height: 100%;
 }
