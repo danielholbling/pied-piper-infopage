@@ -15,9 +15,10 @@ header .logo img {
   margin: 1rem;
 }
 .info-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  color: #358580;
+    display: flex;
+    justify-content: space-evenly;
+    color: #358580;
+    text-align: left;
 }
 .info-wrapper p {
   margin: 0.2rem;
@@ -28,10 +29,163 @@ header .logo img {
   grid: 50vh 50vh/1fr 1fr;
   gap: 20px;
 }
+
 .personal-wrapper article {
   padding: 1rem;
 }
 
 .Alex {
   color: #358580;
+ }
+
+.David {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.gradient-border {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-family: "Helvetica Neue", Arial, serif;
+    background-image: linear-gradient(-135deg, #1400c8, #b900b4, #f50000);
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+.inner-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@media screen and (max-width: 560px) {
+    .inner-wrap {
+        flex-direction: column;
+    }
+}
+.inner-wrap:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+}
+.inner-wrap:hover:before {
+    transition: all 0.5s ease;
+    height: 100%;
+}
+.inner-wrap:hover {
+    transition: all 0.3s ease;
+}
+.inner-wrap:hover .text {
+    text-decoration: underline;
+}
+.inner-wrap:hover .profile-pic {
+    transition: all 0.5s ease;
+    filter: hue-rotate(90deg);
+}
+.inner-wrap .profile-pic {
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
+    border: 3px solid purple;
+    background-image: url("./ostfralla.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0%);
+    align-self: center;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+.inner-wrap .text {
+    align-self: center;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.parallaxit {
+    transform: translate3d(
+        var(--parallax-x),
+        var(--parallax-y),
+        var(--parallax-x)
+    );
+}
+
+.daniel {
+    font-family: 'Merriweather', serif;
+    padding: 1rem 0 0 0 !important;
+    display: grid;
+    grid: auto 1fr / 1fr 1fr;
+    grid-template-areas:    "daniel-img daniel-heading"
+                            "daniel-img daniel-text";
+    background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+}
+
+#daniel-img {
+    grid-area: daniel-img;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.daniel p, .daniel h1 {
+    color: #efefef;
+}
+
+.daniel h1 {
+    margin: 0 2rem 1rem 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    color: #FFFFFF;
+    /* text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15); */
+    font-size: clamp(2.5rem, 2.5vw, 3.5rem);
+}
+
+#daniel-info {
+    margin: 0 2rem 0 0;
+    padding: 0 0 0 2rem;
+}
+
+.daniel p {
+    margin: 0.5rem 0 0 0;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+}
+
+.daniel-social-links {
+    padding: 1rem;
+
+}
+
+.moa {
+    background-image: url(moa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.moa h1 {
+    margin: 0;
+}
+
+.daniel-social-links img {
+   margin: 0 0.5rem 0 0;
 }
