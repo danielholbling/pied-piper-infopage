@@ -120,3 +120,49 @@ header .logo img {
         var(--parallax-x)
     );
 }
+
+.daniel {
+    font-family: 'Merriweather', serif;
+    padding: 1rem 0 0 0 !important;
+    display: grid;
+    grid: auto 1fr / 1fr 1fr;
+    grid-template-areas:    "daniel-img daniel-heading"
+                            "daniel-img daniel-text";
+    background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+}
+
+#daniel-img {
+    grid-area: daniel-img;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.daniel p, .daniel h1 {
+    color: #efefef;
+}
+
+.daniel h1 {
+    margin: 0 2rem 1rem 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    color: #FFFFFF;
+    /* text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15); */
+    font-size: clamp(2.5rem, 2.5vw, 3.5rem);
+}
+
+#daniel-info {
+    margin: 0 2rem 0 0;
+    padding: 0 0 0 2rem;
+}
+
+.daniel p {
+    margin: 0.5rem 0 0 0;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+}
+
+.daniel-social-links {
+    padding: 1rem;
+}
+
+.daniel-social-links img {
+    margin: 0 0.5rem 0 0;
+}
